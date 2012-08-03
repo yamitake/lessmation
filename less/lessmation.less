@@ -1,0 +1,32 @@
+// set twitter bootstrap mixins.less path.
+@import 'twitter-bootstrap/mixins.less';
+
+
+.huwa(){
+	.border-radius(20px);
+	background:#aaff00;
+
+	div{
+		background-color:#aabbff;
+	}
+}
+
+
+.kuru(){
+  overflow:hidden;
+  display:inline-block;
+  .transition(all 1.8s cubic-bezier(0,1,1,2));
+  .rotate(0deg);
+
+  &:hover{
+    .rotate(360deg);
+  }
+}
+
+.kuru(@opt:#ffaa00){
+	text-align: none; 
+}
+
+.kurutest{
+	.kuru();
+}
