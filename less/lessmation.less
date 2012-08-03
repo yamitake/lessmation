@@ -12,7 +12,7 @@
 }
 
 
-.kuru(){
+.kuru(@deg:360deg){
   overflow:hidden;
   display:inline-block;
   .transition(all 1.8s cubic-bezier(0,1,1,2));
@@ -23,10 +23,26 @@
   }
 }
 
-.kuru(@opt:#ffaa00){
-	text-align: none; 
+.goon(){
+	@aa : 2s;
+	.transition(~'font-size 1s ease-in,color 3s ease-in');
+	font-size:10px;
+	color:#0f0;
+
+	&:hover{
+		font-size:100px;
+		color:#f00;
+	}
 }
 
+
 .kurutest{
-	.kuru();
+	background:#fffaaa;
+	width:30px;
+	height:30px;
+	.kuru(720deg);
+}
+
+.goontest{
+	.goon();
 }
